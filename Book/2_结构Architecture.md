@@ -5,21 +5,21 @@
 一个Niagara系统中有四种典型的Programs，这些程序间的关系及其网络通讯关系可通过下面的通讯图表解释：
  
 
-* 站点（Station）：是Niagara运行时实例，意即在JavaVM上运行起来的的Niagara组件应用实例。
-* 工作台（Workbench）：是一种Niagara工具，意即在JavaVM上运行的，承载Niagara插件的主机。
-* 守护进程（Daemon）：是本地的一个守护进程，Daemon用来引导启动Station并且管理运行平台的各种配置，比如本地系统的IP配置。
-* Web Browser：是标准的浏览器客户端，用比如IE或FireFox等浏览器来承载一个Niagara的网页用户界面。
+* **站点（*Station*）**：是Niagara运行时实例，意即在JavaVM上运行起来的的Niagara组件应用实例。
+* **工作台（*Workbench*）**：是一种Niagara工具，意即在JavaVM上运行的，承载Niagara插件的主机。
+* **守护进程（*Daemon*）**：是本地的一个守护进程，Daemon用来引导启动Station并且管理运行平台的各种配置，比如本地系统的IP配置。
+* **浏览器 （*Web Browser*）**：是标准的浏览器客户端，用比如IE或FireFox等浏览器来承载一个Niagara的网页用户界面。
  
 ###通讯协议（Protocols）
 这里有3种的通讯协议用来将上述4种程序结合起来：
-* Fox：是一种私有专利的TCP/IP上运行的协议，用来实现Station与Station间通讯，也可用来实现Workbench与Station间的通讯。
-* HTTP：标准协议，用来在网页浏览器和Station的网页间通讯。
-* Niagarad：是一种私有专利的通讯协议，用来实现守护进程和Workbench间的通讯。
+* **Fox**：是一种私有专利的TCP/IP上运行的协议，用来实现Station与Station间通讯，也可用来实现Workbench与Station间的通讯。
+* **HTTP**：标准协议，用来在网页浏览器和Station的网页间通讯。
+* **Niagarad**：是一种私有专利的通讯协议，用来实现守护进程和Workbench间的通讯。
 ###平台（Platforms）
 Niagara可以被很多平台承载，从小的嵌入式控制器到高端服务器都可以。
-* Jace：术语Jace是（Java Application Control Engine “Java程序控制引擎”）的缩写，它用来描述一种无显示器的嵌入式平台。通常一个Jace都运行于Falsh（闪存）文件系统并且提供后备电池组。Jace 通常承载一个Daemon和一个Station，不承载Workbench。Jace通常运行QNX（一种商用的实时操作系统）或WindowsXP嵌入版作为它的操作系统。
-* Supervisor：术语Supervisor适用于运行了一个Station的工作站或服务器。Supervisor特指为其他无历史或警报集合的Station提供服务的Station机器。Supervisor必须运行一个Station，但也可能同时运行Workbench或Daemon。 
-* Client：客户端一般都是运行Windows或Linux操作系统，并使用Workbench或浏览器来访问Niagara系统的。
+* **Jace**：术语Jace是（Java Application Control Engine “Java程序控制引擎”）的缩写，它用来描述一种无显示器的嵌入式平台。通常一个Jace都运行于Falsh（闪存）文件系统并且提供后备电池组。Jace 通常承载一个Daemon和一个Station，不承载Workbench。Jace通常运行QNX（一种商用的实时操作系统）或WindowsXP嵌入版作为它的操作系统。
+* **Supervisor**：术语Supervisor适用于运行了一个Station的工作站或服务器。Supervisor特指为其他无历史或警报集合的Station提供服务的Station机器。Supervisor必须运行一个Station，但也可能同时运行Workbench或Daemon。 
+* **Client**：客户端一般都是运行Windows或Linux操作系统，并使用Workbench或浏览器来访问Niagara系统的。
 ##站点（Stations）
 Niagara系统的架构是围绕着“以组件（Component）为导向的编程”为核心设计的。组件（Component）是使用Java编写、打包、部署为模块（modules）的自包含单位，多个组件（Component）通过连线连接构成一个应用（application）并运行于Station的运行时上。
 
@@ -81,8 +81,8 @@ Nagara拥有自有协议的通讯协议fox，fox协议在Station间通讯和Work
 Niagara提供广泛的成套的Java API 用来自定义扩展Station和Workbench。下图描述了各种软件是如何构成Niagara架构的：
  
 
-* Baja：Niagara架构的基础，通过Baja模块定义API，这些API定义了基础规则，包括：模块（modules）、组件模块（Component modules）、命名（naming）、导航（navigation）以及安全（security）等。
-* Horizontal：Niagara包含了许多预先建好的组件库，用来支持物联网等领域，这些模块提供了基本的功能，包括：控制（control）、报警（alarm）、历史记录（historical）、日程安排（scheduling）及BQL等功能。
-* Drivers:Niagara被设计为全面支持多协议混用。在Niagara中，使用driver framework标准建立的，用来和外部设备或系统同步信息的组件我们称之为drivers。Drivers将系统中所有的总线如BACnet或Lonworks整合为一体称为一个商业系统，就类似关系型数据库与网络服务一样的关系。
-* Human Interface:Niagara提供了广泛的用户界面协议栈。“gx”架构提供了底层的图像API。在gx基础上建成的bajaui模块提供了专业的工具及标准widgets。在bajaui基础建立的Workbench架构提供了插件的标准API。Px架构和工具用来通过XML实现图形化建立用户界面。
+* **Baja**：Niagara架构的基础，通过Baja模块定义API，这些API定义了基础规则，包括：模块（modules）、组件模块（Component modules）、命名（naming）、导航（navigation）以及安全（security）等。
+* **混合结构（*Horizontal*）**：Niagara包含了许多预先建好的组件库，用来支持物联网等领域，这些模块提供了基本的功能，包括：控制（control）、报警（alarm）、历史记录（historical）、日程安排（scheduling）及BQL等功能。
+* **驱动（*Drivers*）**:Niagara被设计为全面支持多协议混用。在Niagara中，使用driver framework标准建立的，用来和外部设备或系统同步信息的组件我们称之为drivers。Drivers将系统中所有的总线如BACnet或Lonworks整合为一体称为一个商业系统，就类似关系型数据库与网络服务一样的关系。
+* **人机界面(*Human Interface*)**:Niagara提供了广泛的用户界面协议栈。“gx”架构提供了底层的图像API。在gx基础上建成的bajaui模块提供了专业的工具及标准widgets。在bajaui基础建立的Workbench架构提供了插件的标准API。Px架构和工具用来通过XML实现图形化建立用户界面。
  
