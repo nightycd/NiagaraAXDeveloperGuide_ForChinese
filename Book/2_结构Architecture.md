@@ -79,7 +79,8 @@ Nagara拥有自有协议的通讯协议fox，fox协议在Station间通讯和Work
  
 ##接口软件栈（API Stack）
 Niagara提供广泛的成套的Java API 用来自定义扩展Station和Workbench。下图描述了各种软件是如何构成Niagara架构的：
- 
+
+![software stack](../Pics/arch-stack.png)
 
 * **Baja**：Niagara架构的基础，通过Baja模块定义API，这些API定义了基础规则，包括：模块（modules）、组件模块（Component modules）、命名（naming）、导航（navigation）以及安全（security）等。
 * **混合结构（*Horizontal*）**：Niagara包含了许多预先建好的组件库，用来支持物联网等领域，这些模块提供了基本的功能，包括：控制（control）、报警（alarm）、历史记录（historical）、日程安排（scheduling）及BQL等功能。
