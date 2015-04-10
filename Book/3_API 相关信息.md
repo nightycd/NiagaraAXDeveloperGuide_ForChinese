@@ -1,15 +1,19 @@
 #API Ïà¹ØÐÅÏ¢
+
 ##¸ÅÀÀ
 ÔÚNiagaraÖÐÒÑ¾­ÓÐº£Á¿µÄ²»Í¬³Ì¶È±»¼ÇÔØµÄAPI¿ÉÓÃ£¬±àÐ´Ò»¸öAPIÊ±Ó¦Ã÷°×¼¸¸ö¹Ø¼ü¸ÅÄî£º
 * ÎÈ¶¨ÐÔ£ºÕâ¸ö´Ê°ØÊ÷ÕâAPIµÄ³ÉÊì¶ÈºÍÆä³õÏà²»¼æÈÝµÄ¸Ä±äµÄ¿ÉÄÜÐÔ¡£
 * Baja Óë Tridium£º¹«¿ªµÄAPI»á·ÅÔÚjava.baja°üÖÐ£¬Ö´ÐÐÌØÊâÄ¿µÄµÄ´úÂë»á·ÅÔÚcom.tridium°üÖÐ¡£
+
 ##ÎÈ¶¨ÐÔ£¨Statbility£©
 ¹«¹²API±»·ÖÎª3Àà£º
 * ÎÈ¶¨°æ£º´ËÀàAPIÒÑ¾­¾­¹ý²âµ×µÄÆÀ¹À²¢ÇÒÒÑ±»Ëø¶¨¡£´ËÀàAPI½«»á¾¡Ò»ÇÐ¿ÉÄÜµÄÎÈ¶¨´úÂë£¬Ê¹ÆäÔÚÆä¸÷¸ö·¢ÐÐ°æ±¾ÖÐ¼æÈÝ£¨ÖÐ¼ä»áÖØÐÂ±àÒë£©¡£¼´Ê¹ÊÇÖ÷Òª°æ±¾¼äµÄÉý¼¶£¨Èç3.0µ½3.1£©Ò²Èç´Ë£¬Ö»ÓÐÔÚÓÐÖØ´óµÄBUGÐÞÕý»òÉè¼ÆÈ±ÏÝÊ±²Å»áÖÐ¶Ï¼æÈÝ¡£Õâ²¢²»ÒâÎ¶×ÅÕâÐ©API»áÒ»³É²»±ä£¬ÐÂµÄÀàºÍÐÂµÄº¯Êý»á±»³ÖÐøµÄ¼ÓÈë½øÀ´£¬µ«ÒÑ´æÔÚµÄÀàºÍº¯Êý²»»á±»ÒÆ³ý¡£
 * ÆÀ¹À°æ£º´ËÀàAPIÒÑÊµÏÖÆä¹¦ÄÜ£¬²¢·¢²¼³öÀ´¹«¿ªÊ¹ÓÃ¡£ÆÀ¹À°æµÄAPIÒÑ³ÉÊìµ½ÄÜ¹»Ê¹ÓÃÔÚÉú²úÖÐ£¬µ«ÊÇËüÃÇ²¢Ã»ÓÐ×ã¹»¶àµÄÓ¦ÓÃ¼°·´À¡À´Ö¤Ã÷Ëü×ã¹»ÎÈ¶¨¿ÉÒÔ±»Ëø¶¨¡£´ËÀàAPIÔÚÖ÷Òª°æ±¾¸üÐÂÖÐ£¨Èç3.0µ½3.1£©½«¿ÉÄÜÓÐÇáÎ¢µÄ¸Ä¶¯£¬ÕâÐ©¸Ä¶¯½«¿ÉÄÜ»á´òÆÆ¶þ½øÖÆ¼æÈÝÐÔºÍÔ´´úÂë¼æÈÝÐÔ¡£µ«ÊÇ£¬ÈÎºÎ¸Ä¶¯¶¼Ó¦¸ÃÄÜ¹»Ê¹ÓÃºÏÀíµÄÖØ¹¹ÇáÒ×µÄÄÉÈëÖÁÒÑÓÐÔ´´úÂëÖÐ£¨±ÈÈçº¯Êý¸Ä¸öÃû×Ö£©¡£
 * ¿ª·¢°æ£º´ËÀàAPIÖ¸ÈÔÔÚ¿ª·¢ÖÐµÄ´úÂë£¬ËüÊÇÎªÐèÒª¿ò¼Ü×îÐÂ¹¦ÄÜµÄ¿Í»§·¢²¼µÄ¡£¸ÃÀàAPI½«ÓÐ¿ÉÄÜ³öÏÖÒò´ó¹æÄ£ÖØÐÂÉè¼Æ¶ø³öÏÖÇ°ºóÍêÈ«²»¼æÈÝµÄ¸Ä±äµÄÇé¿ö³öÏÖ¡£
+
 ##BajaÊÇÊ²Ã´
 BajaÀ´×ÔÓÚBuilding Automation Java Architecture£¨Java½¨Öþ×Ô¶¯»¯¼Ü¹¹£©µÄËõÐ´¡£ºËÐÄ¿ò¼ÜÊÇTridium¹«Ë¾Éè¼Æ£¬²¢·¢²¼Îª¹«¿ª±ê×¼£¬²¢ÓÉSun¹«Ë¾µÄJavaÉçÇø¿ª·¢·¢²¼ÎªJSR 60£¬Õâ¸öJSRÈÔÔÚ³ÖÐøÅ¬Á¦¸üÐÂÖÐ£¬µ«ÖØÒªµÄÊÇÒªÁË½âBajaºÍTridium¼äµÄÇø±ð¡£
+
 ##±ê×¼ÓëÊµÏÖ
 ´Ó¸ù±¾ÉÏ½²£¬BajaÊÇÒ»ÖÖ¹«¿ª±ê×¼£¬¶øTridium¹¹½¨µÄNiagara¿ò¼ÜÊÇBaja±ê×¼µÄÊµÏÖ¡£×÷ÎªÒ»¸ö±ê×¼£¬Baja²»ÊÇÒ»Ì×Èí¼þ£¬¶ø´¿´âÊÇÒ»×éÎÄµµ¡£Baja±ê×¼°üÀ¨£º
 * BajaÈí¼þÄ£¿éµÄ´ò°ü±ê×¼¡£
@@ -20,6 +24,7 @@ BajaÀ´×ÔÓÚBuilding Automation Java Architecture£¨Java½¨Öþ×Ô¶¯»¯¼Ü¹¹£©µÄËõÐ´¡£ºËÐ
 * BACnetÇý¶¯×é¼þ¼°ÆäAPI¡£
 * LonworksÇý¶¯¼°ÆäAPI
 Ëæ×ÅÊ±¼äµÄÍÆÒÆ£¬¸ü¶àµÄ±ê×¼ºÍ¹¦ÄÜ»á±»¼Ó½øBaja£¬µ«ÊÇÖØÒªµÄÊÇÒª¼Ç×¡BajaÖ»ÊÇÒ»¸ö±ê×¼£¬NiagaraÊÇËüµÄÊµÏÖ¡£Í¬Ê±£¬ÔÚNiagaraÖÐÄã»¹»á·¢ÏÖºÜ¶à²»ÊôÓÚBajaµÄ¹¦ÄÜ£¬´ÓÕâ·½ÃæÀ´ËµNiagaraÊÇBajaµÄ³¬¼¯¡£
+
 ##Javax.baja Óë com.tridium
 NiagaraÖÐµÄºÜ¶à¹¦ÄÜ¶¼Í¨¹ýJava API¿ª·Å³öÀ´¡£ÔÚJavaÖÐ£¬APIÒ»°ã¶¼³É×éµÄÒÔDNSÓòÃûµÄ·½Ê½´ò°ü£¬JavaÉçÇø¿ª·¢×é¿ª·¢µÄÈí¼þÒ»°ã¶¼·ÅÔÚjava»òjavax°üÖÐ£¬ÎªBaja¿ª·¢µÄAPIÒ»°ã¶¼ÔÚjavax.baja°üÖÐ£¬Õâ²¿·ÖAPIÊÇ¹«¿ª±ê×¼BajaµÄÒ»²¿·Ö£¬²¢ÇÒÓÐ¿ÉÄÜÊÇÓÉTridiumÖ®ÍâµÄ³§ÉÌÊµÏÖµÄ£¬ÕâÖÖ´ëÊ©±£Ö¤µÄÕâÐ©APIµÄÖÐÁ¢ÐÔºÍÏòºó¼æÈÝÐÔ¡£
 
